@@ -23,7 +23,7 @@
     clickCount++;
     if(clickCount >= 5) {
       clickCount = 0;
-      $('body').css({overflow:'hidden'});
+      $('html, body').css({overflow:'hidden'});
       happyBirthday();
       window.clearInterval(intervalId);
     }
