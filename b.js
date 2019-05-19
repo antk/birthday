@@ -4,6 +4,7 @@
   var cbg2 = aurl + 'rain-transparent-confetti-1.gif';
   var fw = aurl + 'fireworks.gif';
   var bn = aurl+ 'balloons.gif';
+  var bs = aurl + 'birthday.mp3';
   var clickCount = 0;
   var trigger = document.createElement('div');
   $('body').append(trigger);
@@ -57,7 +58,6 @@
     var elemHtml = '<img class="fireworks" data-src="' + fw + '" style="position:absolute;top:0;left:0;"/>';
     birthdayHtml += elemHtml;
     birthdayHtml += '</div>';
-
     $.ajax({
       url: "//api.giphy.com/v1/gifs/search?api_key=OB4hiQ16LN99kAgP2oAFBsX550GD223X&q=birthday&limit=100&offset=0&rating=G&lang=en"
     }).done(function(data) {
@@ -94,8 +94,8 @@
     }
 
     function birthdaySong() {
-      var iframeHtml = '<iframe width="560" height="315" src="https://www.youtube.com/embed/8zgz2xBrvVQ?autoplay=1&t=1&loop=1&playlist=8zgz2xBrvVQ&end=120" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;left:-9999px"></iframe>';
-      $('body').append(iframeHtml);
+      var html = '<audio loop autoplay controls><source src="' + bs + '"></audio>';
+      $('body').append(html);
     }
 
     function cycleGifs(gifs) {
