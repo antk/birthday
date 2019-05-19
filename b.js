@@ -1,5 +1,5 @@
 (function($) {
-  var cbg1 = 'https://i.ibb.co/6JFCL81/confetti-bg.png';
+  var cbg1 = 'assets/confetti-bg.png';
   var cbg2 = 'https://i.ibb.co/wNjg4yt/rain-transparent-confetti-1.gif';
   var fw = 'https://i.ibb.co/kHpTH9w/fireworks.gif';
   var bn = 'https://i.ibb.co/wC05L40/balloons.gif';
