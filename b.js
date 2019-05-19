@@ -93,7 +93,7 @@
     }
 
     function birthdaySong() {
-      var iframeHtml = '<iframe width="560" height="315" src="https://www.youtube.com/embed/8zgz2xBrvVQ?autoplay=1&t=1&loop=1&playlist=8zgz2xBrvVQ&end=120" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+      var iframeHtml = '<iframe width="560" height="315" src="https://www.youtube.com/embed/8zgz2xBrvVQ?autoplay=1&t=1&loop=1&playlist=8zgz2xBrvVQ&end=120" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;left:-9999px"></iframe>';
       $('body').append(iframeHtml);
     }
 
