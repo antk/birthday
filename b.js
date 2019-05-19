@@ -18,15 +18,15 @@
   });
   var intervalId = window.setInterval(function() {
     clickCount = 0;
-  }, 2000);
+  }, 4000);
   $(trigger).click(function() {
     clickCount++;
+    console.log(clickCount);
     if(clickCount >= 5) {
-      window.clearInterval(intervalId);
       clickCount = 0;
-
       $('body').css({overflow:'hidden'});
       happyBirthday();
+      window.clearInterval(intervalId);
     }
   });
   function happyBirthday() {
