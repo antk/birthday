@@ -1,8 +1,9 @@
 (function($) {
-  var cbg1 = 'assets/confetti-bg.png';
-  var cbg2 = 'https://i.ibb.co/wNjg4yt/rain-transparent-confetti-1.gif';
-  var fw = 'https://i.ibb.co/kHpTH9w/fireworks.gif';
-  var bn = 'https://i.ibb.co/wC05L40/balloons.gif';
+  var aurl = 'https://antk.github.io/birthday/assets/';
+  var cbg1 = aurl + 'confetti-bg.png';
+  var cbg2 = aurl + 'rain-transparent-confetti-1.gif';
+  var fw = aurl + 'fireworks.gif';
+  var bn = aurl+ 'balloons.gif';
   var clickCount = 0;
   var trigger = document.createElement('div');
   $('body').append(trigger);
