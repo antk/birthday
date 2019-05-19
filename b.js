@@ -21,7 +21,6 @@
   }, 4000);
   $(trigger).click(function() {
     clickCount++;
-    console.log(clickCount);
     if(clickCount >= 5) {
       clickCount = 0;
       $('body').css({overflow:'hidden'});
