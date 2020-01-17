@@ -14,7 +14,8 @@
     right:0, 
     height:'100px', 
     width:'100px', 
-    background: 'rgba(255, 255, 255, 0.02)'
+    background: 'rgba(255, 255, 255, 0.02)',
+    border: '1px solid black'
   });
   var intervalId = window.setInterval(function() {
     clickCount = 0;
